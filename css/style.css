@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*   SideBar */
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  justify-content: center;
+  background-color: rgb(35, 35, 35);
+  transition: all 0.5s ease;
+}
+
+.sideBar h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding: 20px 40px;
+  border-bottom: 2px dotted white;
+}
+
+.sideBar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.sideBar ul li {
+  font-size: 1.3rem;
+  padding: 25px;
+}
+
+.sideBar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+}
+
+.sideBar ul li a:hover {
+  padding-left: 50px;
+}
+
+/* checkbox */
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sideBar {
+  left: 0px;
+}
+
+/* icon*/
+.img {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
